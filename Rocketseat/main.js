@@ -1,8 +1,20 @@
-// console.log('antes do bloco', Y)
+// let age = 20
+// let isHuman = true
 
-{
-  let Y = 3
-  console.log(Y)
-}
+let age, isHuman, name
 
-// console.log('depois do bloco', Y)
+age = 18
+isHuman = true
+name = 'Carla'
+
+// multiplos argumentos na funcao
+// console.log(name, age, isHuman)
+
+//escrita de texto + variáveis -concatenação-
+//console.log('A Carla tem 18 anos')
+
+// concatenando valores
+console.log('A ' + name + ' tem ' + age + ' anos.')
+
+//interpolando valores com template literals or template strings (bem melhor)
+console.log(`A ${name} tem ${age} anos.`)
