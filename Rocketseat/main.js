@@ -1,20 +1,23 @@
-// let age = 20
-// let isHuman = true
+// let name = 'Bruna'
+// let age = 24
+// let stars = 4.9
+// let subscribed = true
 
-let age, isHuman, name
+let student = {
+  name: 'Bruna',
+  age: 24,
+  stars: 4.9,
+  subscribed: true
+}
 
-age = 18
-isHuman = true
-name = 'Carla'
+const John = {
+  name: 'John',
+  age: 25,
+  stars: 4.8,
+  subscribed: false
+}
 
-// multiplos argumentos na funcao
-// console.log(name, age, isHuman)
+// console.log(`${student.name} tem ${student.age} anos e tem ${student.stars} stars.`)
 
-//escrita de texto + variáveis -concatenação-
-//console.log('A Carla tem 18 anos')
-
-// concatenando valores
-console.log('A ' + name + ' tem ' + age + ' anos.')
-
-//interpolando valores com template literals or template strings (bem melhor)
-console.log(`A ${name} tem ${age} anos.`)
+const students = [student, John]
+console.log(students)
