@@ -54,30 +54,37 @@
 
 //------------------------------------------------------------
 
-let tecnology = ['html', 'css', 'js']
+// let tecnology = ['html', 'css', 'js']
 
-// adicionar um item no fim do array
-tecnology.push('nodejs')
-//-------------------------------------
-// adicionar item no começo do array
-tecnology.unshift('sql')
-//-------------------------------------
+// // adicionar um item no fim do array
+// tecnology.push('nodejs')
+// //-------------------------------------
+// // adicionar item no começo do array
+// tecnology.unshift('sql')
+// //-------------------------------------
 //remover item do fim do array
-tecnology.pop()
+// tecnology.pop()
 //-------------------------------------
 //remover item do começo do array
-tecnology.shift()
+// tecnology.shift()
 //-------------------------------------
 // pegar somente alguns elementos dos array
 // console.log(tecnology.slice(1,3))
 //-------------------------------------
 //remover 1 ou mais items em qualquer posição do array
   // tecnology.splice(0, 1)
-//-----------------------------------
+//-------------------------------------
+//encontrar a posição de um elemento no array
+
+// let positionArray = tecnology.indexOf('sql')
+// console.log(positionArray)
+// tecnology.splice(positionArray, 1)
+// console.log(tecnology)
 
 
 
- console.log(tecnology)
+
+ 
 
 
 
