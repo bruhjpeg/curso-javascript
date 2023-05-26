@@ -5,23 +5,26 @@ let nota1 = prompt("Digite a primeira nota do seu bimestre");
 let nota2 = prompt("Digite a segunda nota do seu bimestre");
 let nota3 = prompt("Digite a terceira nota do seu bimestre");
 
-let media = Number((nota1 + nota2 + nota3) / 3);
+let n1 = Number(nota1);
+let n2 = Number(nota2);
+let n3 = Number(nota3);
 
-calculate();
+let media = (n1 + n2 + n3) / 3;
+// ou
+// let media = (Number(nota1) + Number(nota2) + Number(nota3)) / 3
 
-function calculate() {
+media = media.toFixed(2)
+
+const aprovado = `Parabéns ${aluno}! sua média é: ${media}  e você está aprovado(a)!`;
+
+const reprovado = `Infelizmente ${aluno} foi reprovado(a) pois sua média é ${media}  boa recuperação!`;
+
+result();
+
+function result() {
   if (media >= 6) {
     alert(`${aprovado}`);
   } else {
     alert(`${reprovado}`);
   }
-  return calculate;
 }
-
-const aprovado = alert(
-  `Parabéns ${aluno}! sua média é: ${media} . E você está aprovado.`
-);
-
-const reprovado = alert(
-  `Infelizmente ${aluno} foi reprovado(a) pois sua média foi ${media}. Boa recuperação!`
-);
