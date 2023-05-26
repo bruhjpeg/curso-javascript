@@ -6,8 +6,9 @@
 //   console.log(age);
 // }
 
-let age = 0
-while(age<10) {
-    console.log(age)
-    age--
+let age = 0;
+while (age < 10) {
+  console.log(age);
+
+  age--;
 }
