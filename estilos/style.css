@@ -6,6 +6,11 @@
 body {
   background-color: rgb(37, 37, 37);
   color: white;
+
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
 }
 
 .container {
@@ -13,21 +18,20 @@ body {
   width: 500px;
   height: 500px;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  
+ 
+  /* animation: container-animation 1s infinite forwards; */
 }
 
 .container h1 {
   font-size: 30px;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  animation: text 1s infinite forwards;
+ 
+ 
+/* 
+  animation: text 1s infinite forwards; */
 }
 
 @keyframes text {
@@ -37,5 +41,19 @@ body {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes container-animation {
+  0% {
+    transform:translateX(60px);
+  }
+
+  50% {
+    transform:translateX(120px);
+  }
+
+  100%{
+    transform: translateX(-120px);
   }
 }
