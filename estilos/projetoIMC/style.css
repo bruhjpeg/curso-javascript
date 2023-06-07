@@ -128,7 +128,7 @@ form button:hover {
 
 /* modal */
 .modal-wrapper.open {
-display: grid;
+  display: grid;
 }
 .modal-wrapper {
   position: absolute;
@@ -143,25 +143,54 @@ display: grid;
 }
 
 button img {
-    width: 2.4rem;
-    height: 2.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .modal {
-    position: relative;
+  position: relative;
 }
 .modal button {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 
-    position: absolute;
-    top:1.6rem;
-    right: 1.6rem;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: transform .3s;
+  transition: transform 0.3s;
 }
 
-.modal button:hover{
-    transform: scale(1.1);
+.modal button:hover {
+  transform: scale(1.1);
+}
+
+/* alert-error */
+
+.alert-error.open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.alert-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  color: var(--tt-error);
+  font-weight: bold;
+
+  padding: 0.8rem 0;
+
+  background-color: var(--bg-error);
+
+  visibility: hidden;
+  opacity: 0;
+
+  transform: translateY(-30px);
+  transition: transform 0.5s;
 }
